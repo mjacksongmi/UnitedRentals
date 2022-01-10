@@ -28,12 +28,7 @@ body {
 
 img {
     max-width: 100%;
-}
-
-.wrapper {
-    display: grid;
-    grid-gap: 20px;
-}
+} 
 
 /* Navigation */
 .main-nav ul{
@@ -127,6 +122,30 @@ p {
     grid-area: top-box-b;
   }
 
+/* Section B */
+
+#section-b {
+    padding: 2em 1em 1em;  
+  }
+  
+  #section-b ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  #section-b li {
+      margin-bottom: 1em;
+      background: #fff;
+      color:#333;
+  }
+  
+  .card-content {
+      padding: 1.5em;
+  }
+  
+
+
 /* Boxes */
 .boxes {
     display: grid;
@@ -142,7 +161,6 @@ p {
 
 /* Info */
 .section-c {
-    background: blue;
     color: var(--light);
     box-shadow: var(--shadow);
     display: center;
@@ -151,17 +169,17 @@ p {
     padding: 3rem;
 }
 
+/* Section D / Boxes */
 
-/* Portfolio */
-.portfolio {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+#section-d .box {
+    padding: 2em;
+    color: #fff;
 }
-.portfolio img {
-    width: 100%;
-    box-shadow: var(--shadow);
+#section-d .box:first-child {
+    background: #06b;
 }
+
+
 
 /* Footer */
 footer {
@@ -172,7 +190,11 @@ footer {
   padding: 1rem;
 }
 /* Media Queries */
+
+
+
 @media(max-width: 700px) {
+
     .top-container {
         grid-template-areas: 
             'showcase showcase'
@@ -182,6 +204,26 @@ footer {
         font-size: 2.5rem;
     }
     
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+    }
+
+    .content-wrap,
+    #section-b ul{
+        grid-column: 2/4;
+    }
+    .box, #main-footer div {
+        grid-column: span 2;
+    }
+
+    #section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    #section-b li {
+    width: 31%;
+
     .main-nav ul{
         grid-template-columns: 1fr;
     }
