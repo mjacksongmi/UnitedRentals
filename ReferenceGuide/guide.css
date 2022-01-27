@@ -106,10 +106,6 @@ li {
         font-weight: bold;
     }
 
-    item .item-container> {
-        background-color: #06b;
-        color: white;
-    }
     .item-container:hover {
         background-color: rgb(200, 227, 252);
     }
