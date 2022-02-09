@@ -76,13 +76,11 @@ p {
 #showcase {
    grid-area: showcase; 
    min-height: 150px;
-   /* background-size: cover;
-   background-position: center; */
-   padding: 3rem;
+   padding: 1rem;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: left;
    box-shadow: var(--shadow);
 }
 
@@ -103,20 +101,20 @@ p {
 .top-box {
     background: var(--primary);
     display: grid;
-    align-items: center;
+    align-items: left;
     justify-items: center;
     box-shadow: var(--shadow);
-    padding: 1.5rem;    
+    padding: 1rem;    
   }
   
-  .top-box .price {
-      font-size: 2.5rem;
-  }
-  
-  .top-box-a {
+.top-box-a {
     grid-area: top-box-a;
+    align-items: center;
     background: none;
     text-align: center;
+    text-decoration:solid;
+    font-size: 21px;
+    border-style: groove;
   }
   
   .top-box-b {
