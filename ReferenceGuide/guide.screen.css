@@ -5,6 +5,7 @@
     --dark: #333;
     --light: #ccc;
     --shadow: 0 1px 5 px rgba(104, 104, 104, 0.8);
+    
 }
 html {
     box-sizing: border-box;
@@ -14,8 +15,9 @@ html {
 
 body {
     background: #ccc;
-    margin: 30px 50px;
+    margin: 20px 40px;
     line-height: 1.4;
+    font-size: 0.875em;
 }
 
 .btn {
@@ -45,7 +47,7 @@ body {
     text-align: center;
     color: var(--dark);
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: .8rem;
     box-shadow: var(--shadow);
 }
 .main-nav a:hover {
@@ -72,13 +74,13 @@ li {
     .collection-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 15px;
     }
 
     .item {
         border: 1px solid gray;
         border-radius: 2px;
-        padding: 10px;
+        padding: 6px;
     }
 
     /* Don't display the first item, since it is used to display the header for tabular layouts*/
@@ -110,7 +112,7 @@ li {
     /* The maximum column width, that can wrap */
     .item-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
         /*grid-column: 2 / span 4;*/
     }
 
@@ -125,19 +127,19 @@ li {
     }*/
 
     .part-id {
-        --column-width-min: 5em;
+        --column-width-min: 4em;
     }
 
     .machine {
-        --column-width-min: 5em;
+        --column-width-min: 4em;
     }
 
     .links {
-        --column-width-min: 8em;
+        --column-width-min: 7em;
     }
 
     .chemical {
-        --column-width-min: 5em;
+        --column-width-min: 6em;
     }
 
     
