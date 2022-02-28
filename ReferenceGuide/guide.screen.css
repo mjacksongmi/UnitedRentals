@@ -38,6 +38,7 @@ body {
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(3, 1fr);
+    
 }
 .main-nav a {
     background: var(--primary);
@@ -50,6 +51,7 @@ body {
     font-size: .8rem;
     box-shadow: var(--shadow);
 }
+
 .main-nav a:hover {
     background: var(--dark);
     color: var(--light);
