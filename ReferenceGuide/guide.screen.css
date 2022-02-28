@@ -144,15 +144,7 @@ li {
         border-top: 1px solid gray;
     }
     
-    /* this is the midheader that is need for seperation. */
-
-    html > body > section > ol > li:nth-of-type(15) > div {
-        background-color: #06b;
-        color:#fff;
-        font-weight: bold;
-
-    }
-
+        
     /* In order to maximize row lines, only display one line for a cell */
     .attribute {
         border-right: 1px solid gray;
@@ -163,7 +155,9 @@ li {
         text-overflow: ellipsis;
     }
 
-    .collection-container>.item-container:first-child {
+    /* There are the "header" rows */
+
+    .collection-container>.item-container:first-child, li:nth-of-type(15) > div {
         background-color: #06b;
         color: white;
         font-weight: bold;
