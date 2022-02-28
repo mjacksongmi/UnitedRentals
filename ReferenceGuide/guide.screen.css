@@ -122,10 +122,7 @@ li {
     }
 
     /* Definition of wrapping column width for attribute groups. */
-    /*.part-information {
-        --column-width-min: 5em;
-    }*/
-
+    
     .part-id {
         --column-width-min: 4em;
     }
@@ -145,6 +142,15 @@ li {
     
     .collection {
         border-top: 1px solid gray;
+    }
+    
+    /* this is the midheader that is need for seperation. */
+
+    html > body > section > ol > li:nth-of-type(15) > div {
+        background-color: #06b;
+        color:#fff;
+        font-weight: bold;
+
     }
 
     /* In order to maximize row lines, only display one line for a cell */
