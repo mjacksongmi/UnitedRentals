@@ -159,14 +159,15 @@ p {
 }
 
 /* Info */
-.section-c {
-    color: var(--light);
-    box-shadow: var(--shadow);
-    display: center;
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 3rem;
+#section-c {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  
+    gap: 40px;
+    grid-auto-flow: column;
 }
+
 
 /* Section D / Boxes */
 
