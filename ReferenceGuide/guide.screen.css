@@ -7,6 +7,12 @@
     --shadow: 0 1px 5 px rgba(104, 104, 104, 0.8);
     
 }
+
+::selection{
+    background: yellow;
+    color: black;
+  }
+  
 html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
